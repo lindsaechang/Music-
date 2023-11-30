@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-wi"/>
+  <title>Media Player Neumorphism</title>
+  <link rel="stylesheet" href="font-awesome/css/"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Main container for the player -->
+    <div class="container">
+      <!-- The player itself -->
+      <div class="player">
+          <!-- Player controls, currently only contains a menu/options button -->
+          <div class="player_controls">
+              <div class="player__btn player__btn--small">
+                  <!-- Menu/options button -->
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+          <!-- Album cover -->
+          <div class="player__album">
+              <img src="./assets/tercercielo.jpg" alt="player" class="img">
+          </div>
+          <!-- Artist name -->
+          <h2 class="player__artist">Tercer Cielo</h2>
+          <!-- Song name -->
+          <h3 class="player__song">Creere</h3>
+          <!-- Volume control or progress tracking (note: there's a typo in the type attribute, it should be "range") -->
+          <input type="rage" value="20" min="0" class="player__level"/>
+          <!-- Audio duration -->
+          <div class="audio_duration">
+              
+          </div>
+          <!-- Audio player -->
+          <audio class="player__audio" controls id="audio">
+              <!-- Audio source -->
+              <source src="./mp3/tercercielo.mp3" type="audio/mpeg">
+          </audio>
+          <!-- Main player controls -->
+          <div class="player__controls">
+              <!-- Backward button -->
+              <div class="player__btn player__btn--medium">
+                  <i class="fas fa-backward"></i>
+              </div>
+              <!-- Play/Pause button -->
+              <div class="player__btn player__btn--medium blue">
+                  <i class="fas fa-play play-btn"></i>
+                  <i class="fas fa-pause pause-btn hide"></i>
+              </div>
+              <!-- Forward button -->
+              <div class="player__btn player__btn--medium">
+                  <i class="fas fa-forward"></i>
+              </div>
+          </div>
+      </div>
+    </div>
+  <sript src="scripts.js"></sript>
+</body>
+</html>
+
+
+  
+  
